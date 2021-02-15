@@ -1,0 +1,235 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.3f1 (8ff31bc5bf5b) revision 9433883'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.746; Version 2009; 64bit' Language: 'en' Physical Memory: 16145 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/damie/Choochoo
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53966
+Successfully changed project path to: C:/Users/damie/Choochoo
+C:/Users/damie/Choochoo
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 18.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/damie/Choochoo/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   
+    VRAM:     5980 MB
+    Driver:   27.21.14.5206
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002065 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 20.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.971 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000736 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.708 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1099 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 56.6 MB.
+System memory in use after: 56.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1540.
+Total: 1.689800 ms (FindLiveObjects: 0.147000 ms CreateObjectMapping: 0.042400 ms MarkObjects: 1.393900 ms  DeleteObjects: 0.105300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Pistol.fbx
+  artifactKey: Guid(5141e70fec7842a42854d4fea69bf8a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pistol.fbx using Guid(5141e70fec7842a42854d4fea69bf8a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe60e18297fb27f3c8f4da8cc42ed23') in 0.239560 seconds
+  Import took 0.241977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 566.841647 seconds.
+  path: Assets/sci-fi-weapons
+  artifactKey: Guid(d4177c0b5a6014a4b87c5b7c86cb6e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons using Guid(d4177c0b5a6014a4b87c5b7c86cb6e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e3d4c7737e1d6b2dad337da9e553d46') in 0.003209 seconds
+  Import took 0.005876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/sci-fi-weapons
+  artifactKey: Guid(d4177c0b5a6014a4b87c5b7c86cb6e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons using Guid(d4177c0b5a6014a4b87c5b7c86cb6e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e3d4c7737e1d6b2dad337da9e553d46') in 0.002258 seconds
+  Import took 0.004278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.303022 seconds.
+  path: Assets/sci-fi-weapons/Base Pack
+  artifactKey: Guid(0b507d8658ad37d47b42de4ef8f0e8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack using Guid(0b507d8658ad37d47b42de4ef8f0e8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b5659bf0cf89c329b72763942793d1') in 0.002699 seconds
+  Import took 0.004877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000757 seconds.
+  path: Assets/sci-fi-weapons/Base Pack
+  artifactKey: Guid(0b507d8658ad37d47b42de4ef8f0e8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack using Guid(0b507d8658ad37d47b42de4ef8f0e8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3b5659bf0cf89c329b72763942793d1') in 0.002648 seconds
+  Import took 0.004542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.418348 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol
+  artifactKey: Guid(c1ec45bd5738abe499df7f39c175dfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol using Guid(c1ec45bd5738abe499df7f39c175dfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b56894b5f932b7a5e86e8568153454b2') in 0.002616 seconds
+  Import took 0.004634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000674 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol
+  artifactKey: Guid(c1ec45bd5738abe499df7f39c175dfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol using Guid(c1ec45bd5738abe499df7f39c175dfb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b56894b5f932b7a5e86e8568153454b2') in 0.002592 seconds
+  Import took 0.004706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.071168 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/Pistol.fbx
+  artifactKey: Guid(1cd1003feb092664194eae4ce88c9bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/Pistol.fbx using Guid(1cd1003feb092664194eae4ce88c9bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '756afbe402860590aef7cfaf3c9e0757') in 0.048427 seconds
+  Import took 0.050747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.308900 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/Textures
+  artifactKey: Guid(31d78fe530443104baaeb727d8c393d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/Textures using Guid(31d78fe530443104baaeb727d8c393d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de6d806c802d72662ae20ce08420adf2') in 0.002957 seconds
+  Import took 0.005088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000901 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/Textures
+  artifactKey: Guid(31d78fe530443104baaeb727d8c393d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/Textures using Guid(31d78fe530443104baaeb727d8c393d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de6d806c802d72662ae20ce08420adf2') in 0.003499 seconds
+  Import took 0.005887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.040150 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Variation 01
+  artifactKey: Guid(6d78760fd6d424c4488c89c6034359d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Variation 01 using Guid(6d78760fd6d424c4488c89c6034359d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5293ab5b03e8bab85f1d516a291f9c3d') in 0.003007 seconds
+  Import took 0.005104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000526 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Variation 01
+  artifactKey: Guid(6d78760fd6d424c4488c89c6034359d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Variation 01 using Guid(6d78760fd6d424c4488c89c6034359d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5293ab5b03e8bab85f1d516a291f9c3d') in 0.001854 seconds
+  Import took 0.003476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.090477 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Variation 01/Pistol_01_Albedo.png
+  artifactKey: Guid(f7062109a2b0e534dbd5697e18b4095e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Variation 01/Pistol_01_Albedo.png using Guid(f7062109a2b0e534dbd5697e18b4095e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177856a7a4f53e4571b5e9f8748532fd') in 0.057736 seconds
+  Import took 0.059574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Variation 01/Pistol_01_Metallic.png
+  artifactKey: Guid(24ababac806dcd943b2223dc02f9dc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Variation 01/Pistol_01_Metallic.png using Guid(24ababac806dcd943b2223dc02f9dc73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2089f6d785c51f89b4505630994b16a9') in 0.011609 seconds
+  Import took 0.013369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.602272 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Shared
+  artifactKey: Guid(366835b6423101149b8e946f2c425995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Shared using Guid(366835b6423101149b8e946f2c425995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e590e527608c5521c7752116a7164e') in 0.002667 seconds
+  Import took 0.004638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Shared
+  artifactKey: Guid(366835b6423101149b8e946f2c425995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Shared using Guid(366835b6423101149b8e946f2c425995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e590e527608c5521c7752116a7164e') in 0.002252 seconds
+  Import took 0.003938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047504 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Shared/Pistol_Emission.png
+  artifactKey: Guid(59bc0b1b5f56a7c4e85092f05bb78645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Shared/Pistol_Emission.png using Guid(59bc0b1b5f56a7c4e85092f05bb78645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66374bc6d437e62048aada955b0e05d5') in 0.007613 seconds
+  Import took 0.009547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Shared/Pistol_Occlusion.png
+  artifactKey: Guid(020a4c217369726459d4d2f49f1979e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Shared/Pistol_Occlusion.png using Guid(020a4c217369726459d4d2f49f1979e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd92f1a398330a5724587d1008ae827cf') in 0.005611 seconds
+  Import took 0.007303 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Shared/Pistol_Normal.png
+  artifactKey: Guid(b6437287502306b43aa33c69cbdde16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/Textures/Shared/Pistol_Normal.png using Guid(b6437287502306b43aa33c69cbdde16a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '251e18005d0d1d6f89f1f2ac88cb2b29') in 0.009243 seconds
+  Import took 0.011744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.704346 seconds.
+  path: Assets/sci-fi-weapons/Base Pack/Pistol/New Material.mat
+  artifactKey: Guid(9f4b35a335aab394dafaee8622d03b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sci-fi-weapons/Base Pack/Pistol/New Material.mat using Guid(9f4b35a335aab394dafaee8622d03b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378ab1a722a6b870a3f21329142a96d0') in 0.012594 seconds
+  Import took 0.014418 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
