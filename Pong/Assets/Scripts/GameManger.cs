@@ -1,45 +1,45 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+
 using Mirror;
 
-public class GameManger : NetworkBehaviour
+[DisallowMultipleComponent]
+[AddComponentMenu("ScorreManager")]
+public class GameManger : NetworkManager
 {
 
-    Rigidbody ballBody;
-    float startSpeed = 500;
+    [Header("Scoring components")]
     public GameObject ball;
     public Transform ballStartPoint;
-    public Transform goalpost1;
-    public Transform goalpost2;
-    public TextMeshProUGUI scoreTXT1;
-    public TextMeshProUGUI scoreTXT2;
-    GameObject ballInstance;
 
-    public Light MainSpotlight;
+   public  GameObject ballInstance;
+    //for flashing lights
 
 
-    public int score1 = 0;
-    public int score2 = 0;
 
 
-    public GameObject player1Prefab;
-    public GameObject player2Prefab;
+
+    public GameObject p1Prefab;
+    public GameObject p2Prefab;
+
+    public Transform p1Trans;
+    public Transform p2Trans;
 
     bool serverStarted;
-
-
+    //to launch the ball
+    Rigidbody ballBody;
+    float startSpeed = 500;
     // Start is called before the first frame update
     void OnClientConnect()
     {
-        if (isClient)
-        {
-            Debug.Log("p2");
-            GameObject player2 = Instantiate(player2Prefab);
-            NetworkServer.Spawn(player2.gameObject);
-            StartCoroutine(GameStartupCoroutine());
-        }
+        // if (isClient)
+        ///   {
+        //       Debug.Log("p2");
+        //        GameObject player2 = Instantiate(player2Prefab);
+        //        NetworkServer.Spawn(player2.gameObject);
+        //        StartCoroutine(GameStartupCoroutine());
+        //  }
 
 
 
@@ -47,87 +47,61 @@ public class GameManger : NetworkBehaviour
     }
     public override void OnStartServer()
     {
-        if (hasAuthority)
+
+
+        //  if (hasAuthority)
+        // // {
+        //      Debug.Log("p1");
+        //      GameObject player1 = Instantiate(player1Prefab);
+        //     NetworkServer.Spawn(player1.gameObject);
+
+        // }
+    }
+    public override void OnServerAddPlayer(NetworkConnection conn)
+    {
+        if (numPlayers == 0)
         {
-            Debug.Log("p1");
-            GameObject player1 = Instantiate(player1Prefab);
-            NetworkServer.Spawn(player1.gameObject);
+            playerPrefab = p1Prefab;
+
+            GameObject player = Instantiate(playerPrefab, p1Trans.position, p1Trans.rotation);
+            NetworkServer.AddPlayerForConnection(conn, player);
+
 
         }
-    }
+        else
+        {
+            playerPrefab = p2Prefab;
+            GameObject player = Instantiate(playerPrefab, p2Trans.position, p2Trans.rotation);
+            NetworkServer.AddPlayerForConnection(conn, player);
 
-    void Start()
+            StartCoroutine(GameStartupCoroutine());
+
+        }
+
+
+        //  if (hasAuthority)
+        // // {
+        //      Debug.Log("p1");
+        //      GameObject player1 = Instantiate(player1Prefab);
+        //     NetworkServer.Spawn(player1.gameObject);
+
+        // }
+    }
+    void SpawnPlayers(GameObject playerPrefab, NetworkConnection conn, Transform startPoint)
     {
 
-       
-
     }
+
 
     // Update is called once per frame
-    void Update()
-    {
-        if (ball && ballBody)
-        {
 
 
 
-
-
-            Debug.Log("ballExists");
-
-
-            if (ballBody.transform.position.y < -5)
-            {
-
-                if (ballBody.transform.position.z > goalpost1.position.z)
-                {
-                    score1 += 1;
-                    scoreTXT1.text = score1.ToString();
-                    StartCoroutine(FlashLightCoroutine());
-                }
-                else if (ballBody.transform.position.z < goalpost2.position.z)
-                {
-                    score2 += 1;
-                    scoreTXT2.text = score2.ToString();
-                    StartCoroutine(FlashLightCoroutine());
-                }
-
-                Object.Destroy(ballInstance.gameObject);
-                StartCoroutine(GameStartupCoroutine());
-            }
-        }
-
-
-    }
-    float flashIntervals = 0.2f;
-    float initialIntensity;
-    IEnumerator FlashLightCoroutine()
-    {
-        initialIntensity = MainSpotlight.intensity;
-        Color initialColour = MainSpotlight.color;
-        MainSpotlight.color = Color.red;
-
-
-        yield return new WaitForSeconds(flashIntervals);
-        MainSpotlight.color = Color.blue;
-
-        yield return new WaitForSeconds(flashIntervals);
-        MainSpotlight.color = Color.green;
-        yield return new WaitForSeconds(flashIntervals);
-        MainSpotlight.color = Color.magenta;
-        yield return new WaitForSeconds(flashIntervals);
-        MainSpotlight.color = initialColour;
-        MainSpotlight.intensity = initialIntensity * 20;
-        yield return new WaitForSeconds(flashIntervals);
-        MainSpotlight.color = initialColour;
-        MainSpotlight.intensity = initialIntensity;
-    }
-    [ClientRpc]
-    void gameStartup()
+    void updateText()
     {
 
     }
-    IEnumerator GameStartupCoroutine()
+    public IEnumerator GameStartupCoroutine()
     {
         ballInstance = Instantiate(ball);
         NetworkServer.Spawn(ballInstance.gameObject);
@@ -148,10 +122,11 @@ public class GameManger : NetworkBehaviour
 
     // dont put any complicated types through here
     //dont you dare
-    [ClientRpc]
+    // also dont try to make an rpc in a netwrok manager/ rather use an inherrited netwrok behaviour
+
     void RpcShootBall()
     {
-        Debug.Log("shoot");
+
         ballBody.AddForce(new Vector3(0, 0, -startSpeed));
     }
 }
