@@ -18,10 +18,10 @@ public class Player : NetworkBehaviour
     {
         if (hasAuthority)
         {
-            Debug.Log("yeet, yeeet");
+        
             direction = Input.GetAxis("Horizontal");
 
-            rpcPlayerMovement();
+            PlayerMovement();
 
         }
     
@@ -29,7 +29,7 @@ public class Player : NetworkBehaviour
     }
 
 
-    void rpcPlayerMovement()
+    void PlayerMovement()
     {
        
         transform.position = new Vector3((direction * PlayerSpeed) + transform.position.x, transform.position.y, transform.position.z);

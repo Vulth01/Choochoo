@@ -28,8 +28,11 @@ public class ScorreManager : NetworkBehaviour
     }
     void Update()
     {
-
-        RpcCheckForGoal();
+        if (isServer)
+        {
+            RpcCheckForGoal();
+        }
+       
     }
 
     [ClientRpc]
